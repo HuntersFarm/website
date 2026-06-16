@@ -25,9 +25,14 @@ jobs:
         with:
           python-version: '3.x'
 
-      - run: pip install mkdocs-material
+      - name: Install mkdocs-material
+        run: pip install mkdocs-material
 
-      - run: mkdocs build
+      - name: Build docs
+        run: mkdocs build
+
+      - name: Check output (important debug step)
+        run: ls -R site
 
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -45,4 +50,4 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
-        
+
