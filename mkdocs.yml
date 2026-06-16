@@ -1,0 +1,19 @@
+site_name: Hunters Farm website
+site_url: http://documentation/
+nav:
+  - Home: index.md
+  - How to find us: how-to-find-us.md
+theme:
+  name: material
+
+# Markdown Extensions for code highlighting and snippets
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+extra_css:
+  - stylesheets/extra.css
