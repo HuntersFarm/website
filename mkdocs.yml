@@ -1,5 +1,5 @@
 site_name: Hunters Farm website
-site_url: http://documentation/
+site_url: http://hunters.farm/
 nav:
   - Home: index.md
   - How to find us: how-to-find-us.md
