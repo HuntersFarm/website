@@ -31,8 +31,8 @@ jobs:
       - name: Build docs
         run: mkdocs build
 
-      - name: Check output (important debug step)
-        run: ls -R site
+      # - name: Check output (important debug step)
+      #   run: ls -R site
 
       - uses: actions/upload-pages-artifact@v3
         with:
